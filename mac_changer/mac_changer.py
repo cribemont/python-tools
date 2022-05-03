@@ -5,7 +5,7 @@ import optparse
 # func to get the arguments passed to the command line
 def get_arguments():
     parser = optparse.OptionParser
-    parser.add_option("-i", "--interface", dest="interface", help="Value of the interface you want to change")
+    parser.add_option("-i", "--interface", dest="interface", help="Interface you want to change")
     parser.add_option("-m", "--mac", dest="destination_mac_address", help="Value of the new MAC")
     # parse arguments passed to the command line
     (options, arguments) = parser.parse_args()
